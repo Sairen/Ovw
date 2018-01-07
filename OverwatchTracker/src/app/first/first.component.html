@@ -21,7 +21,7 @@
             <div *ngFor="let theitem of goldSkins2017;" style="display:inline">
               <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
                 <img src={{theitem.image}}>
-                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="save()" [(ngModel)]="theitem.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="save(theitem)" [ngModel]="theitem.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
                 <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
               </div>
             </div>
@@ -83,8 +83,8 @@ asdhagsd gasjhd gajshdg ajsg djagsd jagsdj agsj dg
 
 
 <div class="row">
-    <div class="col-sm-1" style="background-color:rgb(0, 255, 64); transform:rotate(-90deg);">
-    asdhagsd gasjhd gajshdg ajsg djagsd jagsdj agsj dg         
+    <div  style="background-color:rgb(0, 255, 64); transform:rotate(-90deg); width:300px;">
+    11111 22222 33333 44444 5555        
     </div>
     
     <div class="col-sm-11" style="height:200px; width:100%; background-color:red;">          

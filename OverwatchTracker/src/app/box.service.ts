@@ -55,6 +55,7 @@ getInfo()
 
 saveInfo()
 {
+  
     let savedSkins = JSON.stringify(this.completeInfo);
     localStorage.setItem("thedata", savedSkins);
 }

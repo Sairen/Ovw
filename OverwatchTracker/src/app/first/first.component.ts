@@ -41,8 +41,9 @@ this.goldSkins2017=this.theData.goldSkins2017;
    
   }
 
-  save()
+  save(theitem:Skin)
   {
+    theitem.isChecked=!theitem.isChecked;
     this.box.saveInfo();
   }
 
