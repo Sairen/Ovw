@@ -1,0 +1,14 @@
+.skininput{width: 0px; height: 0px;}
+    
+    
+    
+    label.skinlabel
+    {
+        width: 200px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/snow.png") 0 0 no-repeat;
+    }
