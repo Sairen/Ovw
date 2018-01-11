@@ -4,7 +4,7 @@ export class Skin
     {
         this.name=name;
         this.price=price;
-        this.image= "assets/"+name+".png";
+        this.image= "assets/"+name+".jpg";
         this.isChecked=false;
     }
     

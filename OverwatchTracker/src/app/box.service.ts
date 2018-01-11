@@ -28,11 +28,11 @@ initSkis()
 {
   this.completeInfo = new CompleteInfo();
 
-  this.completeInfo.goldSkins2016.push(new Skin("lskinmei",111));
-  this.completeInfo.goldSkins2016.push(new Skin("lskintor",222));
-  this.completeInfo.goldSkins2016.push(new Skin("lskintra",333));
-  this.completeInfo.goldSkins2016.push(new Skin("lskinzen",444));
-  this.completeInfo.goldSkins2016.push(new Skin("lskinwin",555));
+  this.completeInfo.goldSkins2016.push(new Skin("lskinmei16",111));
+  this.completeInfo.goldSkins2016.push(new Skin("lskintor16",222));
+  this.completeInfo.goldSkins2016.push(new Skin("lskintra16",333));
+  this.completeInfo.goldSkins2016.push(new Skin("lskinzen16",444));
+  this.completeInfo.goldSkins2016.push(new Skin("lskinwin16",555));
 
   this.completeInfo.goldSkins2017.push(new Skin("lskinana17",11));
   this.completeInfo.goldSkins2017.push(new Skin("lskinbas17",11));
@@ -41,6 +41,14 @@ initSkis()
   this.completeInfo.goldSkins2017.push(new Skin("lskinroa17",11));
   this.completeInfo.goldSkins2017.push(new Skin("lskinsol17",11));
   this.completeInfo.goldSkins2017.push(new Skin("lskinsom17",11)); 
+
+  this.completeInfo.purpleSkins2016.push(new Skin("skinluc16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinrea16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinsom16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinroa16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinmcc16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinpha16",11));
+  this.completeInfo.purpleSkins2016.push(new Skin("skinzar16",11));
 
   this.saveInfo();
 }
@@ -54,8 +62,7 @@ getInfo()
 
 
 saveInfo()
-{
-  
+{  
     let savedSkins = JSON.stringify(this.completeInfo);
     localStorage.setItem("thedata", savedSkins);
 }

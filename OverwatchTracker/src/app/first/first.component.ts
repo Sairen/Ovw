@@ -15,12 +15,14 @@ export class FirstComponent implements OnInit
   theData: CompleteInfo;
   goldSkins2016:Skin[];
   goldSkins2017:Skin[];
+  purpleSkins2016:Skin[];
 
   constructor( private box:BoxService) 
   { 
     this.theData = box.getInfo();
 this.goldSkins2016=this.theData.goldSkins2016;
 this.goldSkins2017=this.theData.goldSkins2017;
+this.purpleSkins2016=this.theData.purpleSkins2016;
   }
 
   
