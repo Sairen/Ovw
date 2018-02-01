@@ -1,4 +1,4 @@
-<div >
+<div>
   <!-- ===========================================================UPPER PART START===========================================================-->
   <div class="row" style="margin: 0px; padding:0px">
     <div class="col-sm-1" style="background-color:rgb(221, 252, 110)"></div>
@@ -8,7 +8,7 @@
         12345 of 12345
         <button (click)="reset()">reset</button>
       </div>
-     
+
       <!--2017 golden START-->
       <div class="row" style="margin: 25px 0px; padding:0px;">
 
@@ -24,7 +24,8 @@
             <div *ngFor="let theitem of goldSkins2017;" style="display:inline">
               <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
                 <img src={{theitem.image}}>
-                <input class="check skininput " id={{theitem.name}} type="checkbox" (click)="save(theitem)" [ngModel]="theitem.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+                <input class="check skininput " id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
+                  style="position: absolute; top:0px; left:0px; z-index:1">
                 <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
               </div>
             </div>
@@ -34,8 +35,8 @@
 
       </div>
       <!--2017 golden END-->
-      <!--2016 gold START-->
 
+      <!--2016 gold START-->
       <div class="row" style="margin: 25px 0px; padding:0px">
 
         <div class="col-sm-1" style=" height:200px; padding-left:0px;">
@@ -48,9 +49,10 @@
           <div style="display:flex; justify-content: space-between;  width:100%; display:flex;align-items:center; margin: 0px; padding:0px">
             <!--generate start-->
             <div *ngFor="let theitem of goldSkins2016;" class="effect8" style="display:inline">
-              <div  style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
-                <img  src={{theitem.image}}>
-                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="save(theitem)" [ngModel]="theitem.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+              <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
+                <img src={{theitem.image}}>
+                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
+                  style="position: absolute; top:0px; left:0px; z-index:1">
                 <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
               </div>
             </div>
@@ -58,35 +60,36 @@
           </div>
         </div>
 
-      </div>    
-    <!--2016 gold END-->
+      </div>
+      <!--2016 gold END-->
 
-          <!--2016 purple START-->
+      <!--2016 purple START-->
+      <div class="row" style="margin: 25px 0px; padding:0px">
 
-          <div class="row" style="margin: 25px 0px; padding:0px">
-
-            <div class="col-sm-1" style=" height:200px; padding-left:0px;">
-              <div style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
-                <h4 style="font-family:impact; margin-top:20px; margin-bottom:0px; margin-left:0px; margin-right:0px;">PURPLE SKINS 2016</h4>
-              </div>
-            </div>
-    
-            <div class="col-sm-11" style="margin: 0px; padding:0px">
-              <div style="display:flex; justify-content: space-between;  width:100%; display:flex;align-items:center; margin: 0px; padding:0px">
-                <!--generate start-->
-                <div *ngFor="let theitem of purpleSkins2016;" class="effect8" style="display:inline">
-                  <div  style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
-                    <img  src={{theitem.image}}>
-                    <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="save(theitem)" [ngModel]="theitem.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
-                    <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
-                  </div>
-                </div>
-                <!--generate end-->
-              </div>
-            </div>
-    
+        <div class="col-sm-1" style=" height:200px; padding-left:0px;">
+          <div style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
+            <h4 style="font-family:impact; margin-top:20px; margin-bottom:0px; margin-left:0px; margin-right:0px;">PURPLE SKINS 2016</h4>
           </div>
-        <!--2016 purple END-->
+        </div>
+
+        <div class="col-sm-11" style="margin: 0px; padding:0px">
+          <div style="display:flex; justify-content: space-between;  width:100%; display:flex;align-items:center; margin: 0px; padding:20px">
+            <!--generate start-->
+            <div *ngFor="let theitem of purpleSkins2016;" class="m-3 effect8" style="display:inline">
+              <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
+                <img src={{theitem.image}}>
+                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
+                  style="position: absolute; top:0px; left:0px; z-index:1">
+                <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
+              </div>
+            </div>
+            <!--generate end-->
+          </div>
+        </div>
+
+      </div>
+      <!--2016 purple END-->
+
     </div>
 
 
@@ -96,24 +99,84 @@
 
     <div class="col-sm-1" style="background-color:rgb(221, 252, 110);display:flex; justify-content:flex-end;"></div>
   </div>
- <!-- ===========================================================UPPER PART END===========================================================-->
+  <!-- ===========================================================UPPER PART END===========================================================-->
 
- <!-- ===========================================================LOWER PART START=========================================================-->
 
- <div class="row" style="margin: 0px; padding:0px; display:flex; justify-content:center; height:250px;">
-  <div class="effect8" style="width:200px; height:200px;">
+  <!-- ===========================================================LOWER PART START=========================================================-->
+
+  <!--Header START-->
+  <div class="row" style="margin: 10px 20px; padding:0px;">
+    <div class="col-sm-2" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+      Герой
+    </div>
+    <div class="col-sm-10" style="margin: 0px; padding:0px;">
+      <div class="row" style="margin: 0px; padding:0px;">
+        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+          Реплика 2016
+        </div>
+        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+          Реплика 2017
+        </div>
+        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+          Граффити 2016
+        </div>
+        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+          Граффити 2017
+        </div>
+      </div>
+    </div>
   </div>
+  <!--Header END-->
+
+  <!--Heroes START-->
+  <div class="row" style="display:block; margin: 10px 20px; padding:0px; height:20px; background-color:rgb(245, 48, 228);">
+
+    <div *ngFor="let hero of allHeroes;">
+
+      <div class="row" style="margin: 10px 20px; padding:0px; height:20px; background-color:rgb(156, 48, 245);">
+        <div class="col-sm-2" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+          {{hero.heroName}}
+        </div>
+        <div class="col-sm-10" style="margin: 0px; padding:0px;">
+          <div class="row" style="margin: 0px; padding:0px;">
+            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+              <p>{{hero.voiceline1.title}}</p>
+              <input class="check textinput" id={{hero.voiceline1.id}} type="checkbox" (click)="saveItem(hero.voiceline1)" [ngModel]="hero.voiceline1.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+              <label class="textlabel" for={{hero.voiceline1.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.voiceline1.price}}></label>
+            </div>
+            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+                <p>{{hero.voiceline2.title}}</p>
+                <input class="check textinput" id={{hero.voiceline2.id}} type="checkbox" (click)="saveItem(hero.voiceline2)" [ngModel]="hero.voiceline2.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+                <label class="textlabel" for={{hero.voiceline2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.voiceline2.price}}></label>
+              </div>
+            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+                <p>{{hero.spray1.title}}</p>
+                <input class="check textinput" id={{hero.spray1.id}} type="checkbox" (click)="saveItem(hero.spray1)" [ngModel]="hero.spray1.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+                <label class="textlabel" for={{hero.spray1.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray1.price}}></label>
+              </div>
+            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
+                <p>{{hero.spray2.title}}</p>
+                <input class="check textinput" id={{hero.spray2.id}} type="checkbox" (click)="saveItem(hero.spray2)" [ngModel]="hero.spray2.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
+                <label class="textlabel" for={{hero.spray2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray2.price}}></label>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+  <!--Heroes END-->
 
- <!-- ===========================================================LOWER PART END===========================================================-->
+  <!-- ===========================================================LOWER PART END===========================================================-->
 
- <!--delete START-->
+  <!--delete START-->
   <div class="row" style="margin: 0px; padding:0px; display:flex; justify-content:center; height:250px;">
-  <div class="effect8" style="width:200px; height:200px;">
+    <div class="effect8" style="width:200px; height:200px;">
+    </div>
   </div>
-  </div>
-<!--delete END-->
- 
+  <!--delete END-->
+
 
   <div class="row" style="margin: 0px; padding:0px; display:flex; justify-content:center">
     <!--CARD START-->
@@ -127,9 +190,7 @@
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-  <!--CARD END-->
-    </div>
-  
+    <!--CARD END-->
+  </div>
+
 </div>
-
-

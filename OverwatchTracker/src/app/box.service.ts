@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Skin } from './skin';
 import { CompleteInfo } from './completeinfo';
+import { Hero } from './hero';
+import { GameItem } from './gameitem';
 
 @Injectable()
 export class BoxService {
@@ -15,6 +17,8 @@ completeInfo = new CompleteInfo();
     if(getData==null)
     {
       this.initSkis();
+      this.initHeroes();
+      console.log(this.completeInfo);
       this.saveInfo();
       getData = localStorage.getItem("thedata");
       //оптимизировать
@@ -51,6 +55,23 @@ initSkis()
   this.completeInfo.purpleSkins2016.push(new Skin("skinzar16",11));
 
   this.saveInfo();
+}
+
+
+initHeroes()
+{
+this.completeInfo.allHeroes.push(new Hero("Дива", 
+new GameItem("Ой, ну не стоило", "divavoice1", 11),
+new GameItem("Счастливых праздников", "divavoice2",11),
+new GameItem("Игрушка", "divaspray1",11),
+new GameItem("Печенька", "divaspray2",11)));
+
+this.completeInfo.allHeroes.push(new Hero("Ана", 
+new GameItem("Я прикрою, не волнуйся", "anavoice1", 11),
+new GameItem("Стара я для сюрпризов", "anavoice2", 11),
+new GameItem("Игрушка", "anaspray1", 11),
+new GameItem("Тепло и уют", "anaspray2", 11)));
+this.saveInfo();
 }
 
 

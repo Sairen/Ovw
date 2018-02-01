@@ -1,6 +1,4 @@
-.skininput{width: 0px; height: 0px;}
-    
-    
+.skininput{width: 0px; height: 0px;} 
     
     label.skinlabel
     {
@@ -13,7 +11,18 @@
         background: url("http://underconstruction.xp3.biz/snow.png") 0 0 no-repeat;
     }
 
-
+    .textinput{width: 0px; height: 0px;} 
+    
+    label.textlabel
+    {
+        width: 380px;
+        height: 20px;
+    }
+    
+    input.check:checked + label.textlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/redline.png") 0 0 no-repeat;
+    }
 
 
 
@@ -21,9 +30,9 @@
 .effect8
 {
   	position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 10px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 10px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .effect8:before, .effect8:after
 {
