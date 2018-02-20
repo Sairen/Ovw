@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { BoxService } from './../box.service';
 import { Skin } from '../skin';
 import { CompleteInfo } from '../completeinfo';
 import { Hero } from '../hero';
 import { GameItem } from '../gameitem';
+import { ChinaService } from '../china.service';
 
 @Component({
-  selector: 'app-first',
-  templateUrl: './first.component.html',
-  styleUrls: ['./first.component.css']
+  selector: 'app-china',
+  templateUrl: './china.component.html',
+  styleUrls: ['./china.component.css']
 })
-export class FirstComponent implements OnInit {
+export class ChinaComponent implements OnInit {
 
 
   theData: CompleteInfo;
@@ -20,14 +20,14 @@ export class FirstComponent implements OnInit {
   //allHeroes: Hero[];
   //price: number;
 
-  constructor(private box: BoxService) {
+  constructor(private box: ChinaService) {
     this.theData = box.getInfo();
     //this.goldSkins2016 = this.theData.goldSkins2016;
     //this.goldSkins2017 = this.theData.goldSkins2017;
     //this.purpleSkins2016 = this.theData.purpleSkins2016;
 
-    //console.log('это');
-    //console.log(this.theData);
+    console.log('это');
+    console.log(this.theData);
 
     //this.allHeroes = this.theData.allHeroes;
     //this.price = this.theData.price;
@@ -52,7 +52,7 @@ export class FirstComponent implements OnInit {
   }
 
   saveSkin(skin: Skin) {
-    console.log(skin.isChecked)
+    console.log(skin.isChecked)//убрать это?
     if (skin.isChecked == true) {
       this.theData.price = this.theData.price - skin.price;
     }
@@ -64,7 +64,7 @@ export class FirstComponent implements OnInit {
   }
 
   saveItem(theitem: GameItem) {
-    console.log(theitem.isChecked)
+    console.log(theitem.isChecked)//убрать это?
     if (theitem.isChecked == true) {
       this.theData.price = this.theData.price - theitem.price;
     }
@@ -76,9 +76,7 @@ export class FirstComponent implements OnInit {
   }
 
   reset() {
-    console.log("rezet");
-    this.box.initSkis();
-    this.box.initHeroes();
+    this.box.initEveryting();
     window.location.reload(false);
   }
 

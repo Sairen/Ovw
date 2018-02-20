@@ -1,11 +1,12 @@
-<div>
+<div style=" background-image: url(assets/pale.jpg)">
   <!-- ===========================================================UPPER PART START===========================================================-->
-  <div class="row" style="margin: 0px; padding:0px">
-    <div class="col-sm-1" style="background-color:rgb(221, 252, 110)"></div>
+  <br>
+  <div class="row centered nogaps">
+    <div class="col-sm-1"></div>
 
-    <div class="col-sm-10" style="background-color:rgb(252, 252, 252);margin: 0px; padding:0px">
-      <div class="row" style="margin: 0px; padding:0px;display:flex; justify-content:center; background-color:rgb(110, 252, 209)">
-        12345 of 12345
+    <div class="col-sm-10" style="background-color:transparent;margin: 0px; padding:0px 10px 0px 0px;">
+      <div class="row centered nogaps" style="background-color:#0984e3">
+        12345 из {{theData.price}}
         <button (click)="reset()">reset</button>
       </div>
 
@@ -13,17 +14,17 @@
       <div class="row" style="margin: 25px 0px; padding:0px;">
 
         <div class="col-sm-1" style=" height:200px; padding-left:0px;">
-          <div style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
-            <h4 style="font-family:impact; margin-top:20px; margin-bottom:0px; margin-left:0px; margin-right:0px;">GOLD SKINS 2017</h4>
+          <div class="myshadowItem" style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
+            <h4 style="font-family:impact; margin-top:6px; margin-bottom:0px; margin-left:0px; margin-right:0px;">ЛЕГЕНДАРНЫЕ 2017</h4>
           </div>
         </div>
 
-        <div class="col-sm-11" style="margin: 0px; padding:0px">
+        <div class="col-sm-11 nogaps">
           <div style="display:flex; justify-content: space-between;  width:100%; align-items:center; margin: 0px; padding:0px">
             <!--generate start-->
-            <div *ngFor="let theitem of goldSkins2017;" style="display:inline">
-              <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
-                <img src={{theitem.image}}>
+            <div *ngFor="let theitem of theData.goldSkins2017;" style="display:inline" class="myshadow1">
+              <div style="display:inline-block; background-color:blue; justify-content: center; width:170px; height:200px; position:relative">
+                <img src="assets/winter/{{theitem.image}}">
                 <input class="check skininput " id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
                   style="position: absolute; top:0px; left:0px; z-index:1">
                 <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
@@ -40,20 +41,20 @@
       <div class="row" style="margin: 25px 0px; padding:0px">
 
         <div class="col-sm-1" style=" height:200px; padding-left:0px;">
-          <div style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
-            <h4 style="font-family:impact; margin-top:20px; margin-bottom:0px; margin-left:0px; margin-right:0px;">GOLD SKINS 2016</h4>
+          <div class="myshadowItem" style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
+            <h4 style="font-family:impact; margin-top:6px; margin-bottom:0px; margin-left:0px; margin-right:0px;">ЛЕГЕНДАРНЫЕ 2016</h4>
           </div>
         </div>
 
-        <div class="col-sm-11" style="margin: 0px; padding:0px">
-          <div style="display:flex; justify-content: space-between;  width:100%; display:flex;align-items:center; margin: 0px; padding:0px">
+        <div class="col-sm-11 nogaps">
+          <div class="nogaps" style="display:flex; justify-content: space-between;  width:100%; align-items:center;">
             <!--generate start-->
-            <div *ngFor="let theitem of goldSkins2016;" class="effect8" style="display:inline">
+            <div *ngFor="let theitem of theData.goldSkins2016;" class="myshadow1" style="display:inline">
               <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
-                <img src={{theitem.image}}>
-                <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
+                <img src="assets/winter/{{theitem.image}}">
+                <input class="check skinfatinput" id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
                   style="position: absolute; top:0px; left:0px; z-index:1">
-                <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
+                <label class="skinfatlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
               </div>
             </div>
             <!--generate end-->
@@ -67,17 +68,17 @@
       <div class="row" style="margin: 25px 0px; padding:0px">
 
         <div class="col-sm-1" style=" height:200px; padding-left:0px;">
-          <div style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:#ffd700">
-            <h4 style="font-family:impact; margin-top:20px; margin-bottom:0px; margin-left:0px; margin-right:0px;">PURPLE SKINS 2016</h4>
+          <div class="myshadowItem" style=" transform:rotate(180deg); width:110px; height:100%; writing-mode: tb-rl; padding-right:43px; background-color:rgb(237, 60, 250)">
+            <h3 style="font-family:impact; margin-top:5px; margin-bottom:0px; margin-left:0px; margin-right:0px;">ЭПИЧЕСКИЕ 2016</h3>
           </div>
         </div>
 
-        <div class="col-sm-11" style="margin: 0px; padding:0px">
-          <div style="display:flex; justify-content: space-between;  width:100%; display:flex;align-items:center; margin: 0px; padding:20px">
+        <div class="col-sm-11 nogaps">
+          <div class="nogaps" style="display:flex; justify-content: space-between; width:100%; align-items:center">
             <!--generate start-->
-            <div *ngFor="let theitem of purpleSkins2016;" class="m-3 effect8" style="display:inline">
-              <div style="display:inline-block; background-color:blue; justify-content: center; width:200px; height:200px; position:relative">
-                <img src={{theitem.image}}>
+            <div *ngFor="let theitem of theData.purpleSkins2016;" class="myshadow1" style="display:inline">
+              <div style="display:inline-block; background-color:blue; justify-content: center; width:170px; height:200px; position:relative">
+                <img src="assets/winter/{{theitem.image}}">
                 <input class="check skininput" id={{theitem.name}} type="checkbox" (click)="saveSkin(theitem)" [ngModel]="theitem.isChecked"
                   style="position: absolute; top:0px; left:0px; z-index:1">
                 <label class="skinlabel" for={{theitem.name}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{theitem.price}}></label>
@@ -97,7 +98,7 @@
 
 
 
-    <div class="col-sm-1" style="background-color:rgb(221, 252, 110);display:flex; justify-content:flex-end;"></div>
+    <div class="col-sm-1" style="display:flex; justify-content:flex-end;"></div>
   </div>
   <!-- ===========================================================UPPER PART END===========================================================-->
 
@@ -106,22 +107,32 @@
 
   <!--Header START-->
   <div class="row" style="margin: 10px 20px; padding:0px;">
-    <div class="col-sm-2" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-      Герой
+    <div class="col-sm-2 gap5padd centered">
+      <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
+        Герой
+      </div>
     </div>
     <div class="col-sm-10" style="margin: 0px; padding:0px;">
       <div class="row" style="margin: 0px; padding:0px;">
-        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-          Реплика 2016
+        <div class="col-sm-3 gap5padd centered">
+          <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
+            Реплика 2016
+          </div>
         </div>
-        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-          Реплика 2017
+        <div class="col-sm-3 gap5padd centered">
+          <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
+            Реплика 2017
+          </div>
         </div>
-        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-          Граффити 2016
+        <div class="col-sm-3 gap5padd centered">
+          <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
+            Граффити 2016
+          </div>
         </div>
-        <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-          Граффити 2017
+        <div class="col-sm-3 gap5padd centered">
+          <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
+            Граффити 2017
+          </div>
         </div>
       </div>
     </div>
@@ -129,36 +140,50 @@
   <!--Header END-->
 
   <!--Heroes START-->
-  <div class="row" style="display:block; margin: 10px 20px; padding:0px; height:20px; background-color:rgb(245, 48, 228);">
+  <div class="row" style="display:block; margin: 10px 20px; padding:0px; height:20px; ">
 
-    <div *ngFor="let hero of allHeroes;">
+    <div *ngFor="let hero of theData.allHeroes;">
 
-      <div class="row" style="margin: 10px 20px; padding:0px; height:20px; background-color:rgb(156, 48, 245);">
-        <div class="col-sm-2" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-          {{hero.heroName}}
+      <div class="row" style="margin: 10px 0px; padding:0px; height:20px; ">
+        <div class="col-sm-2 gap5padd centered">
+          <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px;">
+            {{hero.heroName}}
+          </div>
         </div>
-        <div class="col-sm-10" style="margin: 0px; padding:0px;">
-          <div class="row" style="margin: 0px; padding:0px;">
-            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-              <p>{{hero.voiceline1.title}}</p>
-              <input class="check textinput" id={{hero.voiceline1.id}} type="checkbox" (click)="saveItem(hero.voiceline1)" [ngModel]="hero.voiceline1.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
-              <label class="textlabel" for={{hero.voiceline1.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.voiceline1.price}}></label>
+        <div class="col-sm-10 nogaps">
+          <div class="row nogaps">
+            <div class="col-sm-3 centered gap5padd">
+              <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px; ">
+                {{hero.voiceline1.title}}
+              </div>
+              <input class="check textinput" id={{hero.voiceline1.id}} type="checkbox" (click)="saveItem(hero.voiceline1)" [ngModel]="hero.voiceline1.isChecked"
+                style="position: absolute; top:0px; left:0px; z-index:1;">
+              <label class="textlabel" for={{hero.voiceline1.id}} style="position: absolute; top:0px; left:0px; margin-left:5px; z-index:2;" title={{hero.voiceline1.price}}></label>
             </div>
-            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-                <p>{{hero.voiceline2.title}}</p>
-                <input class="check textinput" id={{hero.voiceline2.id}} type="checkbox" (click)="saveItem(hero.voiceline2)" [ngModel]="hero.voiceline2.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
-                <label class="textlabel" for={{hero.voiceline2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.voiceline2.price}}></label>
+            <div class="col-sm-3 centered gap5padd">
+              <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px; ">
+                {{hero.voiceline2.title}}
               </div>
-            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-                <p>{{hero.spray1.title}}</p>
-                <input class="check textinput" id={{hero.spray1.id}} type="checkbox" (click)="saveItem(hero.spray1)" [ngModel]="hero.spray1.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
-                <label class="textlabel" for={{hero.spray1.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray1.price}}></label>
+              <input class="check textinput" id={{hero.voiceline2.id}} type="checkbox" (click)="saveItem(hero.voiceline2)" [ngModel]="hero.voiceline2.isChecked"
+                style="position: absolute; top:0px; left:0px; z-index:1;">
+              <label class="textlabel" for={{hero.voiceline2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.voiceline2.price}}></label>
+            </div>
+            <div class="col-sm-3 centered gap5padd">
+              <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px; ">
+                {{hero.spray1.title}}
               </div>
-            <div class="col-sm-3" style="margin: 0px; padding:0px; display:flex; justify-content:center;">
-                <p>{{hero.spray2.title}}</p>
-                <input class="check textinput" id={{hero.spray2.id}} type="checkbox" (click)="saveItem(hero.spray2)" [ngModel]="hero.spray2.isChecked" style="position: absolute; top:0px; left:0px; z-index:1">
-                <label class="textlabel" for={{hero.spray2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray2.price}}></label>
+              <input class="check textinput" id={{hero.spray1.id}} type="checkbox" (click)="saveItem(hero.spray1)" [ngModel]="hero.spray1.isChecked"
+                style="position: absolute; top:0px; left:0px; z-index:1">
+              <label class="textlabel" for={{hero.spray1.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray1.price}}></label>
+            </div>
+            <div class=" centered gap5padd">
+              <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px; ">
+                {{hero.spray2.title}}
               </div>
+              <input class="check textinput" id={{hero.spray2.id}} type="checkbox" (click)="saveItem(hero.spray2)" [ngModel]="hero.spray2.isChecked"
+                style="position: absolute; top:0px; left:0px; z-index:1">
+              <label class="textlabel" for={{hero.spray2.id}} style="position: absolute; top:0px; left:0px; z-index:2;" title={{hero.spray2.price}}></label>
+            </div>
           </div>
         </div>
       </div>
@@ -170,27 +195,19 @@
 
   <!-- ===========================================================LOWER PART END===========================================================-->
 
-  <!--delete START-->
-  <div class="row" style="margin: 0px; padding:0px; display:flex; justify-content:center; height:250px;">
-    <div class="effect8" style="width:200px; height:200px;">
-    </div>
-  </div>
-  <!--delete END-->
 
 
-  <div class="row" style="margin: 0px; padding:0px; display:flex; justify-content:center">
-    <!--CARD START-->
-    <div class="card effect8" style="margin: 20px; width:100%;">
-      <div class="card-header">
-        Featured
-      </div>
-      <div class="card-block">
-        <h4 class="card-title">Special title treatment</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <!--CARD END-->
-  </div>
 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="display:block; margin: 10px 20px; padding:0px; height:20px; ">
+
+
+
+
+  </div>  
 </div>

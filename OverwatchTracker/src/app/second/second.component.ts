@@ -12,4 +12,9 @@ export class SecondComponent implements OnInit {
   ngOnInit() {
   }
 
+  openClose()
+  {
+    document.getElementById("hideme").style.height="0px";
+  }
+
 }

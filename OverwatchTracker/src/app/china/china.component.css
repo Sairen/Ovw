@@ -1,0 +1,125 @@
+.nogaps
+{
+    margin: 0px; 
+    padding:0px;
+}
+
+.gap5padd
+{
+    margin: 0px; 
+    padding:0px 5px;
+}
+
+.centered
+{
+    display:flex;
+    justify-content:center
+}
+
+.skininput{width: 0px; height: 0px;} 
+    
+    label.skinlabel
+    {
+        width: 170px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/luck2.png") 0 0 no-repeat;
+    }
+
+.skinfatinput
+{
+    width: 0px; height: 0px;
+} 
+    
+    label.skinfatlabel
+    {
+        width: 200px;
+        height: 200px;
+    }    
+    input.check:checked + label.skinfatlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/luck.png") 0 0 no-repeat;
+    }
+
+    .textinput{width: 0px; height: 0px;} 
+    
+    label.textlabel
+    {
+        width: 378px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
+    }
+
+    label.textlabelIcon
+    {
+        width: 197px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelIcon 
+    {
+        background: url("http://underconstruction.xp3.biz/chinalineIcon.png") 0 0 no-repeat;
+    }
+
+    label.textlabelPose
+    {
+        width: 300px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelPose 
+    {
+        background: url("http://underconstruction.xp3.biz/chinalinePose.png") 0 0 no-repeat;
+    }
+
+    label.textlabelSpray
+    {
+        width: 222px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelSpray 
+    {
+        background: url("http://underconstruction.xp3.biz/chinalineSpray.png") 0 0 no-repeat;
+    }
+
+    label.textlabelEmote
+    {
+        width: 361px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelEmote 
+    {
+        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
+    }
+
+
+.myshadow1
+{
+    box-shadow: 0px 0px 30px 0px #000000; 
+}
+
+.myshadowItem
+{
+    box-shadow: 0px 1px 8px 0px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
