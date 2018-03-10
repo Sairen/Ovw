@@ -4,10 +4,10 @@
   <div class="row centered nogaps">
     <div class="col-sm-1"></div>
 
-    <div class="col-sm-10" style="background-color:transparent;margin: 0px; padding:0px 10px 0px 0px;">
-      <div class="row centered nogaps" style="background-color:#0984e3">
+    <div class="col-sm-10" style="background-color:transparent;margin: 0px; padding:0px 10px 0px 0px; ">
+      <div class="row centered nogaps myshadowItem" style="background-color:#0984e3">
         <div class="col-sm-3">
-          <h3 style=" color: #f53e3e; font-family:impact; margin-top: 8px; margin-bottom: 4px; text-shadow: 1px 1px 2px black, 0 0 1em #ee5253;">{{theData.price}} из 36325 </h3>
+          <h3 style=" color: #f53e3e; font-family:impact; margin-top: 8px; margin-bottom: 4px; text-shadow: 1px 1px 2px black, 0 0 1em #ee5253;">{{theData.price}} из 36625 </h3>
 
         </div>
         <div class="col-sm-6 centered ">
@@ -122,14 +122,14 @@
   <div class="row" style="margin: 10px 20px; padding:0px;">
     <div class="col-sm-2 gap5padd centered">
       <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
-          <h5 style="color:white">Герой</h5> 
+        <h5 style="color:white">Герой</h5>
       </div>
     </div>
     <div class="col-sm-10" style="margin: 0px; padding:0px;">
       <div class="row" style="margin: 0px; padding:0px;">
         <div class="col-sm-3 gap5padd centered">
           <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
-              <h5 style="color:white">Реплика 2016 [25]</h5>
+            <h5 style="color:white">Реплика 2016 [25]</h5>
           </div>
         </div>
         <div class="col-sm-3 gap5padd centered">
@@ -139,12 +139,12 @@
         </div>
         <div class="col-sm-3 gap5padd centered">
           <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
-              <h5 style="color:white">Граффити 2016 [25]</h5>
+            <h5 style="color:white">Граффити 2016 [25]</h5>
           </div>
         </div>
         <div class="col-sm-3 gap5padd centered">
           <div class="nogaps centered myshadowItem" style="background-color:#0984e3; width:100%; height:25px;">
-              <h5 style="color:white">Граффити 2017 [75]</h5>
+            <h5 style="color:white">Граффити 2017 [25]</h5>
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@
       <div class="row" style="margin: 10px 0px; padding:0px; height:20px; ">
         <div class="col-sm-2 gap5padd centered">
           <div class="nogaps centered myshadowItem" style="background-color:#74b9ff; width:100%; height:25px;">
-           <b>{{hero.heroName}}</b> 
+            <b>{{hero.heroName}}</b>
           </div>
         </div>
         <div class="col-sm-10 nogaps">
@@ -244,7 +244,7 @@
   <br>
   <!--Icons START-->
   <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
-      <h5 style="color:white"> Иконки</h5>
+    <h5 style="color:white"> Иконки</h5>
   </div>
 
   <div class="row" style=" margin: 10px 20px; padding:0px;">
@@ -256,7 +256,8 @@
         </div>
         <input class="check textinput" id={{theicon.id}} type="checkbox" (click)="saveItem(theicon)" [ngModel]="theicon.isChecked"
           style="position: absolute; top:0px; left:0px; z-index:-1">
-        <label class="textlabelIcon" for={{theicon.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;" title={{theicon.price}}></label>
+        <label class="textlabelIcon" for={{theicon.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;"
+          title={{theicon.price}}></label>
       </div>
 
     </div>
@@ -264,11 +265,11 @@
   <!--Icons END-->
 
   <br>
-  
+
 
   <!--Poses START-->
   <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
-      <h5 style="color:white"> Позы</h5>
+    <h5 style="color:white"> Позы</h5>
   </div>
 
   <div class="row" style=" margin: 10px 20px; padding:0px;">
@@ -280,7 +281,8 @@
         </div>
         <input class="check textinput" id={{thepose.id}} type="checkbox" (click)="saveItem(thepose)" [ngModel]="thepose.isChecked"
           style="position: absolute; top:0px; left:0px; z-index:-1">
-        <label class="textlabelPose" for={{thepose.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;" title={{thepose.price}}></label>
+        <label class="textlabelPose" for={{thepose.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;"
+          title={{thepose.price}}></label>
       </div>
 
     </div>
@@ -288,11 +290,11 @@
   <!--Poses END-->
 
   <br>
-  
+
 
   <!--Sprays START-->
   <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
-      <h5 style="color:white"> Граффити</h5>
+    <h5 style="color:white"> Граффити</h5>
   </div>
 
   <div class="row" style=" margin: 10px 20px; padding:0px;">
@@ -304,7 +306,8 @@
         </div>
         <input class="check textinput" id={{thespray.id}} type="checkbox" (click)="saveItem(thespray)" [ngModel]="thespray.isChecked"
           style="position: absolute; top:0px; left:0px; z-index:-1">
-        <label class="textlabelSpray" for={{thespray.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;" title={{thespray.price}}></label>
+        <label class="textlabelSpray" for={{thespray.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;"
+          title={{thespray.price}}></label>
       </div>
 
     </div>
@@ -313,26 +316,50 @@
 
   <br>
 
-    <!--Emotes START-->
-    <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
-        <h5 style="color:white"> Эмоции</h5>
+  <!--Emotes START-->
+  <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
+    <h5 style="color:white"> Эмоции</h5>
+  </div>
+
+  <div class="row" style=" margin: 10px 20px; padding:0px;">
+    <div *ngFor="let theemote of theData.allEmotes;" style="display:inline">
+      <div class="col-sm-1" style="padding-left:5px; padding-right:6px; margin-bottom:10px;">
+        <div class="myshadowItem centered" style="background-color:#74b9ff; width:361px; height:25px; ">
+          {{theemote.title}} [{{theemote.price}}]
+        </div>
+        <input class="check textinput" id={{theemote.id}} type="checkbox" (click)="saveItem(theemote)" [ngModel]="theemote.isChecked"
+          style="position: absolute; top:0px; left:0px; z-index:-1">
+        <label class="textlabelEmote" for={{theemote.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;"
+          title={{theemote.price}}></label>
       </div>
-    
-      <div class="row" style=" margin: 10px 20px; padding:0px;">
-    
-        <div *ngFor="let theemote of theData.allEmotes;" style="display:inline">
-          <div class="col-sm-1" style="padding-left:5px; padding-right:6px; margin-bottom:10px;">
-            <div class="myshadowItem centered" style="background-color:#74b9ff; width:361px; height:25px; ">
-              {{theemote.title}} [{{theemote.price}}]
-            </div>
-            <input class="check textinput" id={{theemote.id}} type="checkbox" (click)="saveItem(theemote)" [ngModel]="theemote.isChecked"
-              style="position: absolute; top:0px; left:0px; z-index:-1">
-            <label class="textlabelEmote" for={{theemote.id}} style="position: absolute; margin-left:4px; top:0px; left:0px; z-index:2;" title={{theemote.price}}></label>
-          </div>
-    
+
+    </div>
+  </div>
+  <!--Emotes END-->
+
+
+  <br>
+
+  <!--POTG START-->
+  <div class="row myshadowItem centered" style="margin: 10px 25px; padding:0px; height:25px; background-color:#0984e3">
+    <h5 style="color:white"> Лучший момент матча</h5>
+  </div>
+
+  <div class="row" style=" margin: 10px 20px; padding:0px;">      
+      <div class="container-fluid nogaps">
+        <div class="row" style="margin:0px">
+        <div class="col-3" *ngFor="let themoment of theData.allMoments;" style="padding-left:5px; padding-right:5px;">
+            <div class="myshadowItem centered" style="background-color:#74b9ff;  height:25px; ">
+                {{themoment.title}} [{{themoment.price}}]
+              </div>
+              <input class="check textinput" id={{themoment.id}} type="checkbox" (click)="saveItem(themoment)" [ngModel]="themoment.isChecked"
+                style="position: absolute; top:0px; left:0px; z-index:-1">
+              <label class="textlabelEmote" for={{themoment.id}} style="position: absolute; margin-left:0px; top:0px; left:0px; z-index:2;"
+                title={{themoment.price}}></label>
         </div>
       </div>
-      <!--Emotes END-->
-
-
+      </div>
+  </div>
+  <!--POTG END-->
+  <br>
 </div>
