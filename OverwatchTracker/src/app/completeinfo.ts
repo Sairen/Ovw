@@ -29,8 +29,9 @@ export class CompleteInfo
    public purpleSkins2016:Array<Skin>;
    public purpleSkins2017:Array<Skin>;
    public purpleSkins2018:Array<Skin>;
-   public allHeroes:Array<Hero>;
 
+   public allHeroes:Array<Hero>;
+   
    public allIcons:Array<GameItem>;
    public allSprays:Array<GameItem>;
    public allPoses:Array<GameItem>;

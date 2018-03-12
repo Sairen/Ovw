@@ -9,8 +9,6 @@ export class ChinaService {
 
     completeInfo = new CompleteInfo();
 
-
-
     constructor() {
         let getData = localStorage.getItem("china");
         if (getData == null) {
@@ -278,7 +276,6 @@ initEveryting()
         );
 
         this.saveInfo();
-        console.log("initIcons otrabotal");
     }
 
     initSprays() {

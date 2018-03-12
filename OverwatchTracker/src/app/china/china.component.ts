@@ -12,47 +12,16 @@ import { ChinaService } from '../china.service';
 })
 export class ChinaComponent implements OnInit {
 
-
   theData: CompleteInfo;
-  //goldSkins2016: Skin[];
-  //goldSkins2017: Skin[];
-  //purpleSkins2016: Skin[];
-  //allHeroes: Hero[];
-  //price: number;
 
   constructor(private box: ChinaService) {
-    this.theData = box.getInfo();
-    //this.goldSkins2016 = this.theData.goldSkins2016;
-    //this.goldSkins2017 = this.theData.goldSkins2017;
-    //this.purpleSkins2016 = this.theData.purpleSkins2016;
-
-    console.log('это');
-    console.log(this.theData);
-
-    //this.allHeroes = this.theData.allHeroes;
-    //this.price = this.theData.price;
-    
+    this.theData = box.getInfo();    
   }
-
-
-
-
-
-
-
 
   ngOnInit() {
-    //console.log("i are init");
-    //console.log(this.allHeroes);
-    //console.log(this.purpleSkins2016);
-  }
-
-  doCheck() {
-
-  }
+  } 
 
   saveSkin(skin: Skin) {
-    console.log(skin.isChecked)//убрать это?
     if (skin.isChecked == true) {
       this.theData.price = this.theData.price - skin.price;
     }
@@ -64,7 +33,6 @@ export class ChinaComponent implements OnInit {
   }
 
   saveItem(theitem: GameItem) {
-    console.log(theitem.isChecked)//убрать это?
     if (theitem.isChecked == true) {
       this.theData.price = this.theData.price - theitem.price;
     }
@@ -78,21 +46,6 @@ export class ChinaComponent implements OnInit {
   reset() {
     this.box.initEveryting();
     window.location.reload(false);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  } 
 
 }

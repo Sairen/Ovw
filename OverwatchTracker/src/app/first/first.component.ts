@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BoxService } from './../box.service';
+import { WinterService } from './../winter.service';
 import { Skin } from '../skin';
 import { CompleteInfo } from '../completeinfo';
 import { Hero } from '../hero';
@@ -20,7 +20,7 @@ export class FirstComponent implements OnInit {
   //allHeroes: Hero[];
   //price: number;
 
-  constructor(private box: BoxService) {
+  constructor(private box: WinterService) {
     this.theData = box.getInfo();
     //this.goldSkins2016 = this.theData.goldSkins2016;
     //this.goldSkins2017 = this.theData.goldSkins2017;
