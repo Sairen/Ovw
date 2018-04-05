@@ -26,7 +26,7 @@
     
     input.check:checked + label.skinlabel 
     {
-        background: url("http://underconstruction.xp3.biz/luck2.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/nullsmall.png") 0 0 no-repeat;
     }
 
 .skinfatinput
@@ -41,7 +41,7 @@
     }    
     input.check:checked + label.skinfatlabel 
     {
-        background: url("http://underconstruction.xp3.biz/luck.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/nullbig.png") 0 0 no-repeat;
     }
 
 .textinput{width: 0px; height: 0px;} 

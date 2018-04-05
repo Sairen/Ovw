@@ -5,20 +5,20 @@ import { Hero } from './hero';
 import { GameItem } from './gameitem';
 
 @Injectable()
-export class UprisingService {
+export class ArchivesService {
 
 completeInfo = new CompleteInfo();
 
 
   
   constructor()
-  { 
-    let getData = localStorage.getItem("uprising");
+  {     
+    let getData = localStorage.getItem("archives");
     if (getData==null)
     {
       this.initEveryting();
       this.saveInfo();
-      getData = localStorage.getItem("uprising");
+      getData = localStorage.getItem("archives");
     }
     this.completeInfo = JSON.parse(getData);
   }
@@ -32,7 +32,7 @@ completeInfo = new CompleteInfo();
 saveInfo()
 {  
     let savedInfo = JSON.stringify(this.completeInfo);
-    localStorage.setItem("thedata", savedInfo);
+    localStorage.setItem("archives", savedInfo);
 }
 
 initEveryting()
@@ -51,7 +51,13 @@ initSkis()
   this.completeInfo = new CompleteInfo();
 
   this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
-
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
+  this.completeInfo.goldSkins2018.push(new Skin("lskinXXX16",3000));
 
   this.completeInfo.goldSkins2017.push(new Skin("lskingen17",1000));
   this.completeInfo.goldSkins2017.push(new Skin("lskinmcc17",1000));
