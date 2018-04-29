@@ -189,13 +189,13 @@ this.completeInfo.allHeroes.push(new Hero("Райнхардт",
 this.completeInfo.allHeroes.push(new Hero("Симметра",
   new GameItem("Смирись", "symvoice1", 25),
   new GameItem("Я приняла во внимание", "symvoice2", 25),
-  new GameItem("Охотница", "symvoice3", 75),
+  new GameItem("Когда же это кончится", "symvoice3", 75),
   new GameItem("Школьница", "symspray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Солдат76",
   new GameItem("Согласен", "solvoice1", 25),
   new GameItem("Моложе я не становлюсь", "solvoice2", 25),
-  new GameItem("Когда же это кончится", "solvoice3", 75),
+  new GameItem("Да какой я герой?", "solvoice3", 75),
   new GameItem("Коммандос", "solspray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Сомбра",
