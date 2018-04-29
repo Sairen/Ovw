@@ -26,7 +26,7 @@
     
     input.check:checked + label.skinlabel 
     {
-        background: url("http://underconstruction.xp3.biz/nullsmall.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archsmall.png") 0 0 no-repeat;
     }
 
 .skinfatinput
@@ -41,7 +41,7 @@
     }    
     input.check:checked + label.skinfatlabel 
     {
-        background: url("http://underconstruction.xp3.biz/nullbig.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archbig.png") 0 0 no-repeat;
     }
 
 .textinput{width: 0px; height: 0px;} 
@@ -53,17 +53,17 @@ label.textlabel
     }    
     input.check:checked + label.textlabel 
     {
-        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archiveslinegeneral.png") 0 0 no-repeat;
     }
 
 label.textlabelIcon
     {
-        width: 197px;
+        width: 257px;
         height: 25px;
     }    
     input.check:checked + label.textlabelIcon 
     {
-        background: url("http://underconstruction.xp3.biz/chinalineIcon.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archiveslineicon.png") 0 0 no-repeat;
     }
 
 label.textlabelPose
@@ -73,27 +73,28 @@ label.textlabelPose
     }    
     input.check:checked + label.textlabelPose 
     {
-        background: url("http://underconstruction.xp3.biz/chinalinePose.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archiveslinepose.png") 0 0 no-repeat;
     }
 
-label.textlabelSpray
-    {
-        width: 222px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelSpray 
-    {
-        background: url("http://underconstruction.xp3.biz/chinalineSpray.png") 0 0 no-repeat;
-    }
 
 label.textlabelEmote
     {
-        width: 361px;
+        width: 610px;
         height: 25px;
     }    
     input.check:checked + label.textlabelEmote 
     {
-        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/archiveslineemo.png") 0 0 no-repeat;
+    }
+
+    label.textlabelPOTG 
+    {
+        width: 302px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelPOTG 
+    {
+        background: url("http://underconstruction.xp3.biz/archiveslinemom.png") 0 0 no-repeat;
     }
 
 

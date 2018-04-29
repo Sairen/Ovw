@@ -2,17 +2,17 @@ import { GameItem } from "./gameitem";
 
 export class Hero
 {
-constructor(heroName, voiceline1, voiceline2, spray1, spray2)
+constructor(heroName, gameitem1, gameitem2, gameitem3, gameitem4)
 {
     this.heroName =heroName;
-    this.voiceline1=voiceline1;
-    this.voiceline2=voiceline2;
-    this.spray1=spray1;
-    this.spray2=spray2;
+    this.gameitem1=gameitem1;
+    this.gameitem2=gameitem2;
+    this.gameitem3=gameitem3;
+    this.gameitem4=gameitem4;
 }
 heroName: string;
-voiceline1: GameItem;
-voiceline2: GameItem;
-spray1: GameItem;
-spray2: GameItem;
+gameitem1: GameItem;
+gameitem2: GameItem;
+gameitem3: GameItem;
+gameitem4: GameItem;
 }

@@ -10,11 +10,11 @@ export class ChinaService {
     completeInfo = new CompleteInfo();
 
     constructor() {
-        let getData = localStorage.getItem("china");
+        let getData = localStorage.getItem("china1");
         if (getData == null) {
             this.initEveryting();
             this.saveInfo();
-            getData = localStorage.getItem("china");
+            getData = localStorage.getItem("china1");
         }
         this.completeInfo = JSON.parse(getData);
     }
@@ -26,7 +26,7 @@ export class ChinaService {
 
     saveInfo() {
         let savedSkins = JSON.stringify(this.completeInfo);
-        localStorage.setItem("china", savedSkins);
+        localStorage.setItem("china1", savedSkins);
     }
 
 initEveryting()
