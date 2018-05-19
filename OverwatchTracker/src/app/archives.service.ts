@@ -93,7 +93,7 @@ this.completeInfo.allHeroes.push(new Hero("Бастион",
   this.completeInfo.allHeroes.push(new Hero("Бригитта",
   new GameItem("Воина врасплох не застанешь", "brivoice1", 75),
   new GameItem("Не делай из мухи слона", "brivoice2", 75),
-  new GameItem("Пора закатать рукава ", "brivoice3", 75),
+  new GameItem("Пора закатать рукава", "brivoice3", 75),
   new GameItem("Досада", "brispray1", 75)));
 
 this.completeInfo.allHeroes.push(new Hero("Вдова",
@@ -122,14 +122,14 @@ this.completeInfo.allHeroes.push(new Hero("Дива",
 
 this.completeInfo.allHeroes.push(new Hero("Думфист",
   new GameItem("Ты можешь лучше", "doovoice1", 75),
-  new GameItem("Я не спаситель ", "doovoice2", 75),
-  new GameItem("Разве я тебя спрашивал? ", "doovoice3", 75),
+  new GameItem("Я не спаситель", "doovoice2", 75),
+  new GameItem("Разве я тебя спрашивал?", "doovoice3", 75),
   new GameItem("Палец вниз", "doospray1", 75)));
 
 this.completeInfo.allHeroes.push(new Hero("Жнец",
   new GameItem("Двигаюсь дальше", "reavoice1", 25),
   new GameItem("Опять дилетанты", "reavoice2", 25),
-  new GameItem("Месть сладка ", "reavoice3", 75),
+  new GameItem("Месть сладка", "reavoice3", 75),
   new GameItem("Коммандос", "reaspray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Заря",
@@ -164,26 +164,26 @@ this.completeInfo.allHeroes.push(new Hero("Мерси",
 
 this.completeInfo.allHeroes.push(new Hero("Мойра",
   new GameItem("Прочь со сцены", "moivoice1", 75),
-  new GameItem("Ты заблуждаешься ", "moivoice2", 75),
+  new GameItem("Ты заблуждаешься", "moivoice2", 75),
   new GameItem("Это мне по нраву", "moivoice3", 75),
   new GameItem("Первый класс", "moispray1", 75)));
 
 this.completeInfo.allHeroes.push(new Hero("Мэй",
   new GameItem("Научное объяснение", "meivoice1", 25),
   new GameItem("С помощью науки", "meivoice2", 25),
-  new GameItem("Я просто ученый ", "meivoice3", 75),
+  new GameItem("Я просто ученый", "meivoice3", 75),
   new GameItem("Пижамка", "meispray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Ориса",
   new GameItem("Ошибка: деление на ноль", "orivoice1", 25),
   new GameItem("Функции еще тестируются", "orivoice2", 25),
-  new GameItem("Я просто хотела помочь ", "orivoice3", 75),
+  new GameItem("Я просто хотела помочь", "orivoice3", 75),
   new GameItem("Цветок", "orispray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Райнхардт",
   new GameItem("Меня не удержать", "reivoice1", 25),
   new GameItem("Тише едешь - дальше будешь", "reivoice2", 25),
-  new GameItem("Ваше здоровье ", "reivoice3", 75),
+  new GameItem("Ваше здоровье", "reivoice3", 75),
   new GameItem("Тот самый плакат", "reispray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Симметра",
@@ -201,7 +201,7 @@ this.completeInfo.allHeroes.push(new Hero("Солдат76",
 this.completeInfo.allHeroes.push(new Hero("Сомбра",
   new GameItem("Не дрейфь", "somvoice1", 25),
   new GameItem("Поболтать? Спасибо, но нет", "somvoice2", 25),
-  new GameItem("Снова полночь ", "somvoice3", 75),
+  new GameItem("Снова полночь", "somvoice3", 75),
   new GameItem("Кофе", "somspray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Торбьорн",
@@ -219,7 +219,7 @@ this.completeInfo.allHeroes.push(new Hero("Трейсер",
 this.completeInfo.allHeroes.push(new Hero("Турбосвин",
   new GameItem("Верняк", "roavoice1", 25),
   new GameItem("Я убивал и за меньшее", "roavoice2", 25),
-  new GameItem("Кого тут давно не били? ", "roavoice3", 75),
+  new GameItem("Кого тут давно не били?", "roavoice3", 75),
   new GameItem("Байкер", "roaspray1", 25)));
 
 this.completeInfo.allHeroes.push(new Hero("Уинстон",
@@ -292,9 +292,10 @@ initSprays() {
       new GameItem("OR14-NS", "ornsspray", 0),
       new GameItem("Ланцет", "lanzspray", 0),
       new GameItem("Ликвидатор", "likvspray", 0),
-      new GameItem("Штурмовик ", "sturspray", 0),      
+      new GameItem("Штурмовик", "sturspray", 0),      
       new GameItem("Нуль-Мари", "nlmrspray", 0),
-      new GameItem("Нуль-Сектор [25]", "sectspray", 25)
+      new GameItem("Нуль-Сектор [25]", "sectspray", 25),
+      new GameItem("Архивы [25]", "sectspray", 25)
   );
   this.saveInfo();
 }
