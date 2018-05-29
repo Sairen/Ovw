@@ -1,0 +1,117 @@
+.nogaps
+{
+    margin: 0px; 
+    padding:0px;
+}
+
+.gap5padd
+{
+    margin: 0px; 
+    padding:0px 5px;
+}
+
+.centered
+{
+    display:flex;
+    justify-content:center;
+}
+
+.skininput{width: 0px; height: 0px;} 
+    
+    label.skinlabel
+    {
+        width: 170px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/gold.png") 0 0 no-repeat;
+    }
+
+.skinfatinput
+{
+    width: 0px; height: 0px;
+} 
+    
+    label.skinfatlabel
+    {
+        width: 200px;
+        height: 200px;
+    }    
+    input.check:checked + label.skinfatlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/goldbig.png") 0 0 no-repeat;
+    }
+
+.textinput{width: 0px; height: 0px;} 
+    
+label.textlabelvoice
+    {
+        width: 456px;
+        height: 25px;
+        padding-right:50px;
+    }    
+    input.check:checked + label.textlabelvoice
+    {
+        background: url("http://underconstruction.xp3.biz/goldlinevoice.png") 0 0 no-repeat;
+    }
+
+label.textlabelIcon
+    {
+        width: 300px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelIcon 
+    {
+        background: url("http://underconstruction.xp3.biz/goldline1.png") 0 0 no-repeat;
+    }
+
+label.textlabelspray
+    {
+        width: 146px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelspray 
+    {
+        background: url("http://underconstruction.xp3.biz/goldlinespray.png") 0 0 no-repeat;
+    }
+
+    label.textlabelpose
+    {
+        width: 610px;
+        height: 25px;
+    }    
+    input.check:checked + label.textlabelpose
+    {
+        background: url("http://underconstruction.xp3.biz/goldline2.png") 0 0 no-repeat;
+    }
+
+
+
+.myshadow1
+{
+    box-shadow: 0px 0px 30px 0px #000000; 
+}
+
+.myshadowItem
+{
+    box-shadow: 0px 1px 8px 0px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
