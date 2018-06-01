@@ -13,12 +13,12 @@ completeInfo = new CompleteInfo();
   
   constructor()
   {     
-    let getData = localStorage.getItem("archives");
+    let getData = localStorage.getItem("archives1");
     if (getData==null)
     {
       this.initEveryting();
       this.saveInfo();
-      getData = localStorage.getItem("archives");
+      getData = localStorage.getItem("archives1");
     }
     this.completeInfo = JSON.parse(getData);
   }
@@ -32,7 +32,7 @@ completeInfo = new CompleteInfo();
 saveInfo()
 {  
     let savedInfo = JSON.stringify(this.completeInfo);
-    localStorage.setItem("archives", savedInfo);
+    localStorage.setItem("archives1", savedInfo);
 }
 
 initEveryting()
