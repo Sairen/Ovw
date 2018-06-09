@@ -287,6 +287,7 @@ initIcons() {
     new GameItem("Смокинг", "smokicon", 0),
     new GameItem("Кибербьорн", "kibeicon", 0),    
     //new GameItem("Невидимка", "neviicon", 0), 
+    //new GameItem("Праздничмари", "prazicon", 0),
     new GameItem("Золотая Ана", "ganaicon", 0),
     new GameItem("Золотой Бастион", "gbasicon", 0),
     new GameItem("Золотая Бригитта", "gbriicon", 0),
