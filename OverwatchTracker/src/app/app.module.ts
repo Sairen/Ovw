@@ -14,13 +14,16 @@ import { ArchivesService } from './archives.service';
 import { WinterComponent } from './winter/winter.component';
 import { AnniversaryComponent } from './anniversary/anniversary.component';
 import { AnniversaryService } from './anniversary.service';
+import { SummerComponent } from './summer/summer.component';
+import { SummerService } from './summer.service';
 
 const appRoutes: Routes = [
   {path:'', component:MainPageComponent},
   {path:'winter', component:WinterComponent},
   {path:'china', component:ChinaComponent},
   {path:'archives', component:ArchivesComponent},
-  {path:'anniversary', component:AnniversaryComponent}
+  {path:'anniversary', component:AnniversaryComponent},
+  {path:'summer', component:SummerComponent}
 ]
 
 @NgModule({
@@ -30,7 +33,8 @@ const appRoutes: Routes = [
     ChinaComponent,
     ArchivesComponent,
     WinterComponent,
-    AnniversaryComponent
+    AnniversaryComponent,
+    SummerComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot()
   ],
-  providers: [WinterService, ChinaService, ArchivesService, AnniversaryService],
+  providers: [WinterService, ChinaService, ArchivesService, AnniversaryService, SummerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
