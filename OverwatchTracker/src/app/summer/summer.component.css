@@ -1,0 +1,97 @@
+.nogaps
+{
+    margin: 0px; 
+    padding:0px;
+}
+
+.gap5padd
+{
+    margin: 0px; 
+    padding:0px 5px;
+}
+
+.centered
+{
+    display:flex;
+    justify-content:center;
+}
+
+.skinmicroinput{width: 0px; height: 0px;} 
+    
+    label.skinmicrolabel
+    {
+        width: 115px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinmicrolabel 
+    {
+        background: url("http://underconstruction.xp3.biz/summermicro.png") 0 0 no-repeat;
+    }
+
+.skinthininput{width: 0px; height: 0px;} 
+    
+    label.skinthinlabel
+    {
+        width: 145px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinthinlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/summerthin.png") 0 0 no-repeat;
+    }
+
+.skininput{width: 0px; height: 0px;} 
+    
+    label.skinlabel
+    {
+        width: 170px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skinlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/summer.png") 0 0 no-repeat;
+    }
+
+.skinfatinput
+{
+    width: 0px; height: 0px;
+} 
+    
+    label.skinfatlabel
+    {
+        width: 200px;
+        height: 200px;
+    }    
+    input.check:checked + label.skinfatlabel 
+    {
+        background: url("http://underconstruction.xp3.biz/summerbig.png") 0 0 no-repeat;
+    }
+
+.textinput{width: 0px; height: 0px;} 
+    
+label.textlabel
+    {
+        width: 98%;
+        height: 25px;
+        margin-left:5px;
+        
+    }    
+    input.check:checked + label.textlabel
+    {
+        background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
+    }
+
+
+
+.myshadow1
+{
+    box-shadow: 0px 0px 30px 0px #000000; 
+}
+
+.myshadowItem
+{
+    box-shadow: 0px 1px 8px 0px #000000;
+}
