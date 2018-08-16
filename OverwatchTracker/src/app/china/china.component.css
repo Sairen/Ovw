@@ -48,54 +48,15 @@
     
 label.textlabel
     {
-        width: 378px;
+        width: 98%;
         height: 25px;
+        margin-left:5px;
+        
     }    
-    input.check:checked + label.textlabel 
+    input.check:checked + label.textlabel
     {
-        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
     }
-
-label.textlabelIcon
-    {
-        width: 197px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelIcon 
-    {
-        background: url("http://underconstruction.xp3.biz/chinalineIcon.png") 0 0 no-repeat;
-    }
-
-label.textlabelPose
-    {
-        width: 300px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelPose 
-    {
-        background: url("http://underconstruction.xp3.biz/chinalinePose.png") 0 0 no-repeat;
-    }
-
-label.textlabelSpray
-    {
-        width: 222px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelSpray 
-    {
-        background: url("http://underconstruction.xp3.biz/chinalineSpray.png") 0 0 no-repeat;
-    }
-
-label.textlabelEmote
-    {
-        width: 361px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelEmote 
-    {
-        background: url("http://underconstruction.xp3.biz/chinalineBig.png") 0 0 no-repeat;
-    }
-
 
 
 .myshadow1

@@ -34,68 +34,17 @@
     width: 0px; height: 0px;
 } 
     
-    label.skinfatlabel
-    {
-        width: 200px;
-        height: 200px;
-    }    
-    input.check:checked + label.skinfatlabel 
-    {
-        background: url("http://underconstruction.xp3.biz/archbig.png") 0 0 no-repeat;
-    }
-
-.textinput{width: 0px; height: 0px;} 
-    
 label.textlabel
-    {
-        width: 378px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabel 
-    {
-        background: url("http://underconstruction.xp3.biz/archiveslinegeneral.png") 0 0 no-repeat;
-    }
-
-label.textlabelIcon
-    {
-        width: 257px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelIcon 
-    {
-        background: url("http://underconstruction.xp3.biz/archiveslineicon.png") 0 0 no-repeat;
-    }
-
-label.textlabelPose
-    {
-        width: 300px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelPose 
-    {
-        background: url("http://underconstruction.xp3.biz/archiveslinepose.png") 0 0 no-repeat;
-    }
-
-
-label.textlabelEmote
-    {
-        width: 610px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelEmote 
-    {
-        background: url("http://underconstruction.xp3.biz/archiveslineemo.png") 0 0 no-repeat;
-    }
-
-    label.textlabelPOTG 
-    {
-        width: 302px;
-        height: 25px;
-    }    
-    input.check:checked + label.textlabelPOTG 
-    {
-        background: url("http://underconstruction.xp3.biz/archiveslinemom.png") 0 0 no-repeat;
-    }
+{
+    width: 98%;
+    height: 25px;
+    margin-left:5px;
+    
+}    
+input.check:checked + label.textlabel
+{
+    background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
+}
 
 
 
