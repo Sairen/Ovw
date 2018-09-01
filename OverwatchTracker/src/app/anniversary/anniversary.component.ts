@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Skin } from '../skin';
 import { CompleteInfo } from '../completeinfo';
-import { Hero } from '../hero';
 import { GameItem } from '../gameitem';
 import { AnniversaryService } from '../anniversary.service';
 
