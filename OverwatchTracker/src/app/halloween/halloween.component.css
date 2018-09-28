@@ -1,0 +1,97 @@
+.nogaps
+{
+    margin: 0px; 
+    padding:0px;
+}
+
+.gap5padd
+{
+    margin: 0px; 
+    padding:0px 5px;
+}
+
+.centered
+{
+    display:flex;
+    justify-content:center;
+}
+
+.skin115input{width: 0px; height: 0px;} 
+    
+    label.skin115label
+    {
+        width: 115px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin115label 
+    {
+        background: url("http://underconstruction.xp3.biz/summermicro.png") 0 0 no-repeat;
+    }
+
+.skin150input{width: 0px; height: 0px;} 
+    
+    label.skin150label
+    {
+        width: 150px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin150label 
+    {
+        background: url("http://underconstruction.xp3.biz/halloween150.png") 0 0 no-repeat;
+    }
+
+.skin170input{width: 0px; height: 0px;} 
+    
+    label.skin170label
+    {
+        width: 170px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin170label 
+    {
+        background: url("http://underconstruction.xp3.biz/summer.png") 0 0 no-repeat;
+    }
+
+.skin200input
+{
+    width: 0px; height: 0px;
+} 
+    
+    label.skin200label
+    {
+        width: 200px;
+        height: 200px;
+    }    
+    input.check:checked + label.skin200label 
+    {
+        background: url("http://underconstruction.xp3.biz/halloween200.png") 0 0 no-repeat;
+    }
+
+.textinput{width: 0px; height: 0px;} 
+    
+label.textlabel
+    {
+        width: 98%;
+        height: 25px;
+        margin-left:5px;
+        
+    }    
+    input.check:checked + label.textlabel
+    {
+        background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
+    }
+
+
+
+.myshadow1
+{
+    box-shadow: 0px 0px 30px 0px #000000; 
+}
+
+.myshadowItem
+{
+    box-shadow: 0px 1px 8px 0px #000000;
+}
