@@ -11,17 +11,18 @@ import { ChinaComponent } from './china/china.component';
 import { ChinaService } from './china.service';
 import { ArchivesComponent } from './archives/archives.component';
 import { ArchivesService } from './archives.service';
-import { WinterComponent } from './winter/winter.component';
 import { AnniversaryComponent } from './anniversary/anniversary.component';
 import { AnniversaryService } from './anniversary.service';
 import { SummerComponent } from './summer/summer.component';
 import { SummerService } from './summer.service';
 import { HalloweenComponent } from './halloween/halloween.component';
 import { HalloweenService } from './halloween.service';
+import { ChristmasComponent } from './christmas/christmas.component';
+import { ChristmasService } from './christmas.service';
 
 const appRoutes: Routes = [
   {path:'', component:MainPageComponent},
-  {path:'winter', component:WinterComponent},
+  {path:'christmas', component:ChristmasComponent},
   {path:'china', component:ChinaComponent},
   {path:'archives', component:ArchivesComponent},
   {path:'anniversary', component:AnniversaryComponent},
@@ -35,10 +36,10 @@ const appRoutes: Routes = [
     MainPageComponent,
     ChinaComponent,
     ArchivesComponent,
-    WinterComponent,
     AnniversaryComponent,
     SummerComponent,
-    HalloweenComponent
+    HalloweenComponent,
+    ChristmasComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot()
   ],
-  providers: [WinterService, ChinaService, ArchivesService, AnniversaryService, SummerService, HalloweenService],
+  providers: [WinterService, ChinaService, ArchivesService, AnniversaryService, SummerService, HalloweenService, ChristmasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
