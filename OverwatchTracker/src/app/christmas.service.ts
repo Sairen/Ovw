@@ -47,10 +47,16 @@ initEveryting()
     initSkis() {
         this.completeInfo = new CompleteInfoNew();
 
-        this.completeInfo.goldSkins2018.push(new Skin("lskintest18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinzar18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinwid18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinsym18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinjun18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinmer18", 3000));
+        this.completeInfo.goldSkins2018.push(new Skin("lskinluc18", 3000));
 
-
-        this.completeInfo.purpleSkins2018.push(new Skin("skintest18", 750));
+        this.completeInfo.purpleSkins2018.push(new Skin("skinbas18", 750));
+        this.completeInfo.purpleSkins2018.push(new Skin("skinash18", 750));
+        this.completeInfo.purpleSkins2018.push(new Skin("skinrei18", 750));
 
 
         this.completeInfo.goldSkins2017.push(new Skin("lskinsol17", 1000));
@@ -84,203 +90,203 @@ initEveryting()
             new GameItem("Я прикрою, не волнуйся", "anavoice1", 25),
             new GameItem("Стара я для сюрпризов", "anavoice2", 25),
             new GameItem("Тост", "anapose1", 75),
-            new GameItem(" ", "anapose2", 0)
+            new GameItem(" ", "anavoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Бастион",
             new GameItem("Дуи-дуу-хоу", "basvoice1", 25),
             new GameItem("Бу-у ву-у", "basvoice2", 25),
             new GameItem(" ", "baspose1", 0),
-            new GameItem(" ", "baspose2", 0)
+            new GameItem(" ", "basvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Бригитта",
-            new GameItem(" ", "brivoice1", 0),
-            new GameItem(" ", "brivoice2", 0),
-             new GameItem(" ", "bripose1", 0),
-             new GameItem(" ", "bripose2", 0)
+            new GameItem("Для тебя сделала [75]", "brivoice1", 75),
+            new GameItem("С рождеством [75]", "brivoice2", 75),
+            new GameItem("Тост [225]", "bripose1", 225),
+            new GameItem(" ", "brivoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Вдова",
             new GameItem("Совершенство", "widvoice1", 25),
             new GameItem("С рождеством", "widvoice2", 25),
             new GameItem("Тост", "widpose1", 75),
-            new GameItem(" ", "widpose2", 0)
+            new GameItem("Счастливых празников [75]", "widvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Генджи",
             new GameItem("С рождеством!", "genvoice1", 25),
             new GameItem("Считай что тебе повезло", "genvoice2", 25),
             new GameItem("Тост", "genpose1", 75),
-            new GameItem(" ", "genpose2", 0)
+            new GameItem(" ", "genvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Дзенъятта",
             new GameItem("Всякая снежинка падает", "zenvoice1", 25),
             new GameItem("Возрадуся мир", "zenvoice2", 25),
             new GameItem("Тост", "zenpose1", 75),
-            new GameItem(" ", "zenpose2", 0)
+            new GameItem("Поиграть в снежки [75]", "zenvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Дива",
             new GameItem("Ой, ну не стоило", "divavoice1", 25),
             new GameItem("Cчастливых праздников", "divavoice2", 25),
             new GameItem("Праздник", "divapose1", 75),
-            new GameItem(" ", "divpose2", 0)
+            new GameItem(" ", "divvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Думфист",
             new GameItem("А говорят рыцарей больше нет", "doovoice1", 25),
             new GameItem("И что же ты мне подаришь?", "doovoice2", 25),
-            new GameItem(" ", "doopose1", 0),
-            new GameItem(" ", "doopose2", 0)
+            new GameItem("Тост [225]", "doopose1", 225),
+            new GameItem(" ", "doovoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Жнец",
             new GameItem("Где ваш праздничный настрой?", "reavoice1", 25),
             new GameItem("Остынь навсегда", "reavoice2", 25),
-            new GameItem(" ", "reapose1", 0),
-            new GameItem(" ", "reapose2", 0)
+            new GameItem("Тост [225]", "reapose1", 225),
+            new GameItem(" ", "reavoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Заря",
             new GameItem("За родину!", "zarvoice1", 25),
             new GameItem("Да остынь ты", "zarvoice2", 25),
             new GameItem("Тост", "zarpose1", 75),
-            new GameItem(" ", "zarpose2", 0)
+            new GameItem("Здесь прохладно [75]", "zarvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Крысавчик",
             new GameItem("С рождеством!", "junvoice1", 25),
             new GameItem("Ну давай, встряхнись уже", "junvoice2", 25),
-            new GameItem(" ", "junpose1", 0),
-            new GameItem(" ", "junpose2", 0)
+            new GameItem("Тост [225]", "junpose1", 225),
+            new GameItem("Счастливых праздников [75]", "junvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Лусио",
             new GameItem("Счастливых праздников", "lucvoice1", 25),
             new GameItem("На вершину чартов", "lucvoice2", 25),
             new GameItem(" ", "lucpose1", 0),
-            new GameItem(" ", "lucpose2", 0)
+            new GameItem(" ", "lucvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("МакКри",
             new GameItem("Кто-то же должен растопить лед", "mccvoice1", 25),
             new GameItem("Кого-то занесла метелица", "mccvoice2", 25),
             new GameItem(" ", "mccpose1", 0),
-            new GameItem(" ", "mccpose2", 0)
+            new GameItem(" ", "mccvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Мерси",
             new GameItem("Ваш ангел хранитель", "mervoice1", 25),
             new GameItem("Я бы не отказалась", "mervoice2", 25),
             new GameItem("Тост", "merpose1", 75),
-            new GameItem("Омела", "merpose2", 75)
+            new GameItem("Омела (поза) [75]", "mervoice3", 75)
         ));
 
        this.completeInfo.allHeroesPoseVoice.push(new Hero("Мойра",
            new GameItem("Aбсолютный ноль", "moivoice1", 75),
            new GameItem("С рождеством", "moivoice2", 75),
-           new GameItem(" ", "moipose1", 0),
-           new GameItem(" ", "moipose2", 0)
+           new GameItem("Тост [225]", "moipose1", 225),
+           new GameItem("Дар познания [75]", "moivoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Мэй",
             new GameItem("У меня для тебя подарок", "meivoice1", 25),
             new GameItem("Любишь сюрпризы?", "meivoice2", 25),
             new GameItem(" ", "meipose1", 0),
-            new GameItem(" ", "meipose2", 0)
+            new GameItem("Поиграем в снежки [75]", "meivoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Ориса",
             new GameItem("Где же новый год?", "orivoice1", 25),
             new GameItem("Анализ поведения за год", "orivoice2", 25),
             new GameItem(" ", "oripose1", 0),
-            new GameItem(" ", "oripose2", 0)
+            new GameItem(" ", "orivoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Райнхардт",
             new GameItem("Еще один непослушный ребенок?", "reivoice1", 25),
             new GameItem("Отпусти и забудь", "reivoice2", 25),
             new GameItem("Тост", "reipose1", 75),
-            new GameItem(" ", "reipose2", 0)
+            new GameItem(" ", "reivoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Симметра",
             new GameItem("Совершенство", "symvoice1", 25),
             new GameItem("Кто-то ждал чуда?", "symvoice2", 25),
             new GameItem(" ", "sympose1", 0),
-            new GameItem(" ", "sympose2", 0)
+            new GameItem(" ", "symvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Солдат76",
             new GameItem("Как снегири", "solvoice1", 25),
             new GameItem("С рождеством", "solvoice2", 25),
             new GameItem("Тост", "solpose1", 75),
-            new GameItem(" ", "solpose2", 0)
+            new GameItem(" ", "solvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Сомбра",
             new GameItem("Я знаю кто плохо себя вел", "somvoice1", 25),
             new GameItem("Я тоже могу хорошо себя вести", "somvoice2", 25),
             new GameItem(" ", "sompose1", 0),
-            new GameItem(" ", "sompose2", 0)
+            new GameItem("С рождеством [75]", "somvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Торбьорн",
             new GameItem("Работаю только на заказ", "torvoice1", 25),
             new GameItem("Вершина мастерства", "torvoice2", 25),
             new GameItem("Тост", "torpose1", 75),
-            new GameItem(" ", "torpose2", 0)
+            new GameItem(" ", "torvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Трейсер",
             new GameItem("Дело в шляпе", "travoice1", 25),
             new GameItem("Хо-хо-хо!", "travoice2", 25),
-            new GameItem(" ", "trapose1", 0),
-            new GameItem(" ", "trapose2", 0)
+            new GameItem("Тост [225]", "trapose1", 0),
+            new GameItem(" ", "travoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Турбосвин",
             new GameItem("Хо-хо-хо", "roavoice1", 25),
             new GameItem("Я припас для тебя подарочек", "roavoice2", 25),
             new GameItem("Тост", "roapose1", 75),
-            new GameItem(" ", "roapose2", 0)
+            new GameItem(" ", "roavoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Уинстон",
             new GameItem("У меня подарок для тебя", "winvoice1", 25),
             new GameItem("Переходим в режим вечеринки", "winvoice2", 25),
             new GameItem(" ", "winpose1", 0),
-            new GameItem(" ", "winpose2", 0)
+            new GameItem("Отрываюсь по-зверски [75]", "winvoice3", 75)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Фара",
             new GameItem("Ожидаются осадки", "phavoice1", 25),
             new GameItem("Вольно", "phavoice2", 25),
             new GameItem("Тост", "phapose1", 75),
-            new GameItem(" ", "phapose2", 0)
+            new GameItem("Остынь [75]", "phavoice3", 75)
         ));
 
             this.completeInfo.allHeroesPoseVoice.push(new Hero("Хаммонд",
-            new GameItem(" ", "hamvoice1", 0),
-            new GameItem(" ", "hamvoice2", 0),
+            new GameItem("Украшайте все [75]", "hamvoice1", 0),
+            new GameItem("Хо. Хо. Хо. [75]", "hamvoice2", 0),
             new GameItem(" ", "hampose1", 0),
-            new GameItem(" ", "hampose2", 0)
+            new GameItem(" ", "hamvoice3", 0)
         ));
 
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Ханзо",
             new GameItem("Подарок для тебя", "hanvoice1", 25),
             new GameItem("Холоден как лед", "hanvoice2", 25),
             new GameItem(" ", "hanpose1", 0),
-            new GameItem(" ", "hanpose2", 0)
+            new GameItem("Мороз и стужа [75]", "hanvoice3", 75)
         ));
         
         this.completeInfo.allHeroesPoseVoice.push(new Hero("Эш",
-            new GameItem(" ", "ashvoice1", 0),
-            new GameItem(" ", "ashvoice2", 0),
+            new GameItem("И так все есть [75]", "ashvoice1", 75),
+            new GameItem("Пора дарить [75]", "ashvoice2", 75),
             new GameItem(" ", "ashpose1", 0),
-            new GameItem(" ", "ashpose2", 0)
+            new GameItem(" ", "ashvoice3", 0)
         ));
 
         this.saveInfo();
@@ -302,8 +308,8 @@ initEveryting()
         ));
 
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Бригитта",
-            new GameItem(" ", "brispray1", 0),
-            new GameItem(" ", "brispray2", 0),
+            new GameItem("Игрушка [75]", "brispray1", 75),
+            new GameItem("Вязание [75]", "brispray2", 75),
              new GameItem(" ", "briemot1", 0),
              new GameItem(" ", "bripotg1", 0)
         ));
@@ -318,7 +324,7 @@ initEveryting()
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Генджи",
             new GameItem("Игрушка", "genspray1", 25),
             new GameItem("Кадоматсу", "genspray2", 25),
-            new GameItem(" ", "genemot1", 0),
+            new GameItem("Снежинки [750]", "genemot1", 750),
             new GameItem(" ", "genpotg1", 0)
         ));
 
@@ -353,7 +359,7 @@ initEveryting()
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Заря",
             new GameItem("Игрушка", "zarspray1", 25),
             new GameItem("Матрешка", "zarspray2", 25),
-            new GameItem("Что же там", "zaremot1", 0),// priceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+            new GameItem("Что же там", "zaremot1", 1000),
             new GameItem(" ", "zarpotg1", 0)
         ));
 
@@ -402,7 +408,7 @@ initEveryting()
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Ориса",
             new GameItem("Игрушка", "orispray1", 25),
             new GameItem("Звезда", "orispray2", 25),
-            new GameItem("Щенок", "oriemot1", 0),//priceeeeeeeeeeeeeeeeeee
+            new GameItem("Щенок", "oriemot1", 1000),
             new GameItem(" ", "oripotg1", 0)
         ));
 
@@ -437,7 +443,7 @@ initEveryting()
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Торбьорн",
             new GameItem("Игрушка", "torspray1", 25),
             new GameItem("Мастерим", "torspray2", 25),
-            new GameItem(" ", "toremot1", 0),
+            new GameItem("Мои детки [750]", "toremot1", 750),
             new GameItem(" ", "torpotg1", 0)
         ));
 
@@ -470,10 +476,10 @@ initEveryting()
         ));
 
             this.completeInfo.allHeroesSprayPotg.push(new Hero("Хаммонд",
-            new GameItem(" ", "hamspray1", 0),
-            new GameItem(" ", "hamspray2", 0),
+            new GameItem("Игрушка [75]", "hamspray1", 75),
+            new GameItem("Носок [75]", "hamspray2", 75),
             new GameItem(" ", "hamemot1", 0),
-            new GameItem(" ", "hampotg1", 0)
+            new GameItem("Гирлянда [750]", "hampotg1", 750) 
         ));
 
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Ханзо",
@@ -484,8 +490,8 @@ initEveryting()
         ));
 
         this.completeInfo.allHeroesSprayPotg.push(new Hero("Эш",
-            new GameItem(" ", "ashspray1", 0),
-            new GameItem(" ", "ashspray2", 0),
+            new GameItem("Игрушка [75]", "ashspray1", 75),
+            new GameItem("Перестрелка [75]", "ashspray2", 75),
             new GameItem(" ", "ashemot1", 0),
             new GameItem(" ", "ashpotg1", 0)
         ));
@@ -495,12 +501,13 @@ initEveryting()
 
     initIcons() {
         this.completeInfo.allIcons.push(
-            new GameItem("2016", "wint16icon", 0),
             new GameItem("2017", "wint17icon", 0),
-            new GameItem("2018", "wint18icon", 0),//proverit
-            new GameItem("Зимняя сказка 16", "wintr16icon", 0),//proverit
-            new GameItem("Зимняя сказка 17", "wintr17icon", 0),//proverit
-            
+            new GameItem("2018", "wint18icon", 0),
+            new GameItem("2019", "wint19icon", 0),
+            new GameItem("Зимняя сказка 16", "wintr16icon", 0),
+            new GameItem("Зимняя сказка 17", "wintr17icon", 0),
+            new GameItem("Зимняя сказка 18", "wintr18icon", 0),
+
             new GameItem("Подарок", "podaicon", 0),            
             new GameItem("Снежный шар", "sharicon", 0),
             new GameItem("Дрейдл", "dradicon", 0),
@@ -523,6 +530,8 @@ initEveryting()
             new GameItem("Пачи-олень", "paolicon", 0),            
             new GameItem("Йетимари", "yemaicon", 0),
             new GameItem("Сантапачи", "sapaicon", 0),
+            new GameItem("Снегомари", "snmaicon", 0),
+            new GameItem("Пачикунчик", "pakuicon", 0),
 
             new GameItem("Йети", "yetiicon", 0),
             new GameItem("Эльф-помошник", "elfficon", 0),
@@ -534,7 +543,15 @@ initEveryting()
             new GameItem("Турбоморж", "morjicon", 0),
             new GameItem("Полярная сова", "sovaicon", 0),
             new GameItem("Ледяная королева", "koroicon", 0),
-            new GameItem("Воин на прогулке", "voinicon", 0)
+            new GameItem("Воин на прогулке", "voinicon", 0),
+
+            new GameItem("Сноубордистка", "brdsicon", 0),
+            new GameItem("Песец", "peseicon", 0),
+            new GameItem("Фигуристка", "figuicon", 0),
+            new GameItem("Биатлонистка", "biaticon", 0),
+            new GameItem("Кампус", "krmpicon", 0),
+            new GameItem("Фея Драже", "fedricon", 0)
+
         );
 
         this.saveInfo();
@@ -542,8 +559,7 @@ initEveryting()
 
     initSprays() {
         this.completeInfo.allSprays.push(
-            new GameItem("Зимняя сказка16", "skaz16spray", 25),
-            new GameItem("Зимняя сказка17", "skaz17spray", 25),//proverit est li eto
+            new GameItem("Зимняя сказка", "skazspray", 25),
             new GameItem("Снегомэй", "smeispray", 25),
             new GameItem("Снегосвин", "sroaspray", 25),
             new GameItem("Снегокри", "smccspray", 25),
@@ -551,23 +567,9 @@ initEveryting()
             new GameItem("Охотница йети", "hntrspray", 25),
             new GameItem("Йети", "yetispray", 25),
 
-
-
-
-            new GameItem("...не умирают", "nodespray", 25),
-            new GameItem("Летучие мыши", "letuspray", 0),
-            new GameItem("Конфетный снежок", "konfspray", 0),
-            new GameItem("Зомники", "zom3spray", 0),
-            new GameItem("Зомник", "zom2spray", 0),
-            new GameItem("Зомбардир", "zom1spray", 0),
-            new GameItem("Варево", "varespray", 0),
-            new GameItem("Огненная тыква", "ognespray", 0),
-//проверить цены - некоторые бесплатные
-            new GameItem("Мои творения", "creaspray", 0),
-            new GameItem("Чудовище", "chudspray", 0),
-            new GameItem("Всадник", "vsadspray", 0),
-            new GameItem("Ведьмочка", "vedmspray", 0)
-
+            new GameItem("Ледяной трон", "throicon", 0),
+            new GameItem("Шлеп", "shlpicon", 0),
+            new GameItem("Ярость Йети", "yaroicon", 0)
             
         );
         this.saveInfo();
