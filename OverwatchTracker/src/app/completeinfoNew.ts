@@ -9,9 +9,11 @@ export class CompleteInfoNew
         this.goldSkins2016=new Array<Skin>();
         this.goldSkins2017=new Array<Skin>();
         this.goldSkins2018=new Array<Skin>();
+        this.goldSkins2019=new Array<Skin>();
         this.purpleSkins2016=new Array<Skin>();
         this.purpleSkins2017=new Array<Skin>();
         this.purpleSkins2018=new Array<Skin>();
+        this.purpleSkins2019=new Array<Skin>();
         this.allHeroesPoseVoice=new Array<Hero>();
         this.allHeroesSprayPotg=new Array<Hero>();
         this.allIcons = new Array<GameItem>();
@@ -27,9 +29,11 @@ export class CompleteInfoNew
    public goldSkins2016:Array<Skin>;
    public goldSkins2017:Array<Skin>;
    public goldSkins2018:Array<Skin>;
+   public goldSkins2019:Array<Skin>;
    public purpleSkins2016:Array<Skin>;
    public purpleSkins2017:Array<Skin>;
    public purpleSkins2018:Array<Skin>;
+   public purpleSkins2019:Array<Skin>;
 
    public allHeroesPoseVoice:Array<Hero>;
    public allHeroesSprayPotg:Array<Hero>;
