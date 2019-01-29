@@ -16,30 +16,56 @@
     justify-content:center;
 }
 
-.skininput{width: 0px; height: 0px;} 
+.skin115input{width: 0px; height: 0px;} 
     
-    label.skinlabel
+    label.skin115label
+    {
+        width: 115px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin115label 
+    {
+        background: url("http://underconstruction.xp3.biz/summermicro.png") 0 0 no-repeat;
+    }
+
+.skin150input{width: 0px; height: 0px;} 
+    
+    label.skin150label
+    {
+        width: 150px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin150label 
+    {
+        background: url("http://underconstruction.xp3.biz/luck3.png") 0 0 no-repeat;
+    }
+
+.skin170input{width: 0px; height: 0px;} 
+    
+    label.skin170label
     {
         width: 170px;
         height: 200px;
     }
     
-    input.check:checked + label.skinlabel 
+    input.check:checked + label.skin170label 
     {
         background: url("http://underconstruction.xp3.biz/luck2.png") 0 0 no-repeat;
     }
 
-.skinfatinput
+.skin200input
 {
     width: 0px; height: 0px;
 } 
     
-    label.skinfatlabel
+    label.skin200label
     {
         width: 200px;
         height: 200px;
     }    
-    input.check:checked + label.skinfatlabel 
+    input.check:checked + label.skin200label 
     {
         background: url("http://underconstruction.xp3.biz/luck.png") 0 0 no-repeat;
     }
@@ -55,8 +81,9 @@ label.textlabel
     }    
     input.check:checked + label.textlabel
     {
-        background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
+        background: url("http://underconstruction.xp3.biz/deeno.png") 0 0 ;
     }
+
 
 
 .myshadow1
@@ -68,20 +95,3 @@ label.textlabel
 {
     box-shadow: 0px 1px 8px 0px #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

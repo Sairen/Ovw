@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skin } from '../skin';
-import { CompleteInfo } from '../completeinfo';
 import { GameItem } from '../gameitem';
 import { ChinaService } from '../china.service';
+import { CompleteInfoNew } from '../completeinfoNew';
 
 @Component({
   selector: 'app-china',
@@ -11,7 +11,7 @@ import { ChinaService } from '../china.service';
 })
 export class ChinaComponent implements OnInit {
 
-  theData: CompleteInfo;
+  theData: CompleteInfoNew;
 
   constructor(private box: ChinaService) {
     this.theData = box.getInfo();    
