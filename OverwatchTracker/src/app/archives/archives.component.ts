@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skin } from '../skin';
-import { CompleteInfo } from '../completeinfo';
 import { GameItem } from '../gameitem';
 import { ArchivesService } from '../archives.service';
+import { CompleteInfoNew } from '../completeinfoNew';
 
 @Component({
   selector: 'app-archives',
@@ -11,7 +11,7 @@ import { ArchivesService } from '../archives.service';
 })
 export class ArchivesComponent implements OnInit {
 
-  theData: CompleteInfo;
+  theData: CompleteInfoNew;
 
   constructor(private box: ArchivesService) {
     this.theData = box.getInfo();  

@@ -16,37 +16,44 @@
     justify-content:center;
 }
 
-.skininput{width: 0px; height: 0px;} 
+.skin150input{width: 0px; height: 0px;} 
     
-    label.skinlabel
+    label.skin150label
+    {
+        width: 150px;
+        height: 200px;
+    }
+    
+    input.check:checked + label.skin150label 
+    {
+        background: url("http://underconstruction.xp3.biz/arhiv150.png") 0 0 no-repeat;
+    }
+
+.skin170input{width: 0px; height: 0px;} 
+    
+    label.skin170label
     {
         width: 170px;
         height: 200px;
     }
     
-    input.check:checked + label.skinlabel 
+    input.check:checked + label.skin170label 
     {
-        background: url("http://underconstruction.xp3.biz/archsmall.png") 0 0 no-repeat;
+        background: url("http://underconstruction.xp3.biz/arhiv170.png") 0 0 no-repeat;
     }
-
-.skinfatinput
-{
-    width: 0px; height: 0px;
-} 
     
-label.textlabel
-{
-    width: 98%;
-    height: 25px;
-    margin-left:5px;
+.skin200input{width: 0px; height: 0px;} 
     
-}    
-input.check:checked + label.textlabel
+label.skin200label
 {
-    background: url("http://underconstruction.xp3.biz/summerline.png") 0 0 ;
+    width: 200px;
+    height: 200px;
 }
 
-
+input.check:checked + label.skin200label 
+{
+    background: url("http://underconstruction.xp3.biz/arhiv200.png") 0 0 no-repeat;
+}
 
 .myshadow1
 {
@@ -58,19 +65,16 @@ input.check:checked + label.textlabel
     box-shadow: 0px 1px 8px 0px #000000;
 }
 
+.textinput{width: 0px; height: 0px;} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+label.textlabel
+    {
+        width: 98%;
+        height: 25px;
+        margin-left:5px;
+        
+    }    
+    input.check:checked + label.textlabel
+    {
+        background: url("http://underconstruction.xp3.biz/arhivsmall.png") 0 0 ;
+    }
