@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skin } from '../skin';
-import { CompleteInfo } from '../completeinfo';
 import { GameItem } from '../gameitem';
 import { AnniversaryService } from '../anniversary.service';
+import { CompleteInfoNew } from '../completeinfoNew';
 
 @Component({
   selector: 'app-anniversary',
@@ -11,7 +11,7 @@ import { AnniversaryService } from '../anniversary.service';
 })
 export class AnniversaryComponent implements OnInit {
 
-  theData: CompleteInfo;
+  theData: CompleteInfoNew;
 
   constructor(private box: AnniversaryService) {
     this.theData = box.getInfo();  
