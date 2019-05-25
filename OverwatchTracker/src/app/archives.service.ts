@@ -266,9 +266,7 @@ this.completeInfo.allHeroesPoseVoice.push(new Hero("Ханзо",
   new GameItem("Найдите дворецкого [75]", "ashvoice1", 75),
   new GameItem("Следи за манерами [75]", "ashvoice2", 75),
   new GameItem("Ты мне доверяешь? [75]", "ashvoice4", 75),
-  new GameItem(" ", "ashvoice3", 0)
-));
-
+  new GameItem(" ", "ashvoice3", 0)));
 this.saveInfo();
 }
 
